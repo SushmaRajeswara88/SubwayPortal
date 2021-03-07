@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg">
+      <div class="container-fluid pt-3">
+          <span class="title">Sub</span>
+          <span class="title2">way Portal</span>
+          <select class="form-control" id="store-id" >
+          </select>
+          <br><br>
+
+          <!-- Tabs -->
+          <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#subs" data_id="1">Subs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nonSubs" data_id="2">Non Subs</a>
+              </li>
+            </ul>
+          <div class="tab-content">
+              <div id="subs" class="container tab-pane active"><br>
+                      <!-- subs tab content -->
+                      <div id="container-grid">
+                        <div id='line'></div>
+                        <div class="item">
+                        </div>
+                      </div>
+              </div>
+              <div id="nonSubs" class="container tab-pane fade"><br>
+                <div id="container-grid-nonSub">
+                <div class="item">
+                
+                </div>
+                </div>
+                
+              </div>
+          </div> 
+          <div class="buttons-div">
+            <button class="btn btn-primary" type="submit" onclick="submit()">Submit</button>
+            <button class="btn btn-primary" type="reset" onclick="reset()">Reset</button>
+          </div>
+          
+      </div>
+  </div>
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+        });
+    </script>
+     <script src="script/portal.js"></script>
+</body>
+</html>
